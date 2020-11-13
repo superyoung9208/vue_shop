@@ -7,6 +7,7 @@ import Users from '../components/user/Users.vue'
 import Roles from '../components/power/Roles.vue'
 import Rights from '../components/power/Rights.vue'
 import Cate from '../components/goods/Cate.vue'
+import Params from '../components/goods/Params.vue'
 
 Vue.use(VueRouter)
 
@@ -23,7 +24,7 @@ const routes = [
     path: '/home',
     component: Home,
     redirect: '/welcome',
-    children: [{ path: '/welcome', component: Welcome }, { path: '/users', component: Users }, { path: '/roles', component: Roles }, { path: '/rights', component: Rights }, { path: '/categories', component: Cate }]
+    children: [{ path: '/welcome', component: Welcome }, { path: '/users', component: Users }, { path: '/roles', component: Roles }, { path: '/rights', component: Rights }, { path: '/categories', component: Cate }, { path: '/params', component: Params }]
   }
 ]
 
